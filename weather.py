@@ -4,7 +4,7 @@ import pytz
 import requests
 import math
 import json
-API_KEY = '50c80f5ea4ecd2e494d8a4695e641288' 
+API_KEY = 'OPEN_WEATHER_MAP_API_KEY' 
 API_URL = ('https://api.openweathermap.org/data/2.5/onecall?lat={}&lon={}&exclude=minutely,alerts&appid={}')
 
 

@@ -5,16 +5,16 @@ import requests
 import math
 import livepopulartimes
 # Google Maps API Key
-API_KEY = 'AIzaSyBFFcX_FVRZ9jGO1rYjmAfGYpbdpmtytk8'
+API_KEY = 'GOOGLE_MAPS_API_KEY'
 # Popular Times API Key 
-API_KEY_PT = 'AIzaSyA3Rmv8IFDHSfey62MN-i5NPjOyP87rZH0'
+API_KEY_PT = 'GOOGLE_POPULAR_TIMES_API_KEY'
 
 # Google Places Autocomplete API Key and URL
-API_KEY_AUTO = 'AIzaSyC-z7lmlLwk4Gv0pPXYHqXxvU_6h8Uhb0Q' 
+API_KEY_AUTO = 'GOOGLE_PLACES_AUTOCOMPLETE_API_KEY' 
 API_URL_AUTO = 'https://maps.googleapis.com/maps/api/place/autocomplete/json?origin={0},{1}&location={0},{1}&key={2}&input=pizza'
 
 # Google Places Details API Key and URL
-API_KEY_DET = 'AIzaSyBGBi0WkyLqVVlXDYhg5qY_hAJFgWZwhYs'
+API_KEY_DET = 'GOOGLE_PLACES_DETAILS_API_KEY'
 API_URL_DET = 'https://maps.googleapis.com/maps/api/place/details/json?place_id={}&fields=geometry,opening_hours&key={}'
 
 class Place(object):
