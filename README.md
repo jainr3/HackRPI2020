@@ -38,6 +38,7 @@ Commands to run to get started with Python's virtual environment:
 * pip install -r requirements.txt
 * **python main.py**
 * Open http://127.0.0.1:5000/
+
 Commands to deploy to Google Cloud
 * Install the Google Cloud SDK
 * Create the app
