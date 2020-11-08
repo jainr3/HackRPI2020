@@ -27,3 +27,18 @@ We learned a lot about technical skills with the new technologies and we also le
 ## What's next for Travel Times
 
 We would firstly like to improve the algorithm and optimize the weights to be more objective. The algorithm could also potentially take in more data such as live / expected traffic data and potentially Yelp reviews. In addition, the user workflow is one-sided right now as it supports only specific locations that are filled in with autocomplete. To improve this, we could support queries like "Pizza places near me" and then compare and rank locations based on distance, ratings, and the popular-times / weather data (that was already being used). As always, we could refactor the code to be more readable and have thorough error checking.
+
+## Miscellaneous
+[Tutorial to get started](https://www.freecodecamp.org/news/how-to-build-a-web-app-using-pythons-flask-and-google-app-engine-52b1bb82b221/)
+[Google Cloud Platform](https://console.cloud.google.com/)
+Commands to run to get started with Python's virtual environment:
+* pip install virtualenvwrapper-winpip install virtualenv
+* mkdir WeatherAppcd WeatherAppvirtualenv venv
+* call venv\Scripts\activate.bat
+* pip install -r requirements.txt
+* **python main.py**
+* Open http://127.0.0.1:5000/
+Commands to deploy to Google Cloud
+* Install the Google Cloud SDK
+* Create the app
+* gcloud app deploy
