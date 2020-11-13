@@ -3,8 +3,8 @@ import json
 from pprint import pprint as pp
 from flask import Flask, flash, redirect, render_template, request, url_for, jsonify
 from datetime import datetime
-from weather import weather_query, weather_rating
-from maps import get_location, get_popular_times, get_places_autocomplete, Place, popular_times_ratings, location_stars_rating, current_popularity_rating, location_open_currently
+from weather import *
+from maps import *
 
 app = Flask(__name__)
 

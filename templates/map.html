@@ -199,7 +199,8 @@
             console.log(place.geometry.location.lat());
             console.log(place.geometry.location.lng());
             var addr_comp_len = place.address_components.length;
-            // AJAX CALL
+            
+            // Send location data to backend
             $.post("{{ url_for('result') }}",
             {
               json_data: JSON.stringify({

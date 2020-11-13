@@ -17,26 +17,6 @@ API_URL_AUTO = 'https://maps.googleapis.com/maps/api/place/autocomplete/json?ori
 API_KEY_DET = 'GOOGLE_PLACES_DETAILS_API_KEY'
 API_URL_DET = 'https://maps.googleapis.com/maps/api/place/details/json?place_id={}&fields=geometry,opening_hours&key={}'
 
-class Place(object):
-    def __init__(self, loc_data):
-        # data derived from autocomplete query
-        self.place_id = loc_data["place_id"]
-        self.types = loc_data["types"]
-        self.loc_name = loc_data["structured_formatting"]["main_text"]
-        self.loc_secondary = loc_data["structured_formatting"]["secondary_text"]
-
-        self.updated = False
-
-        self.query_details(self.place_id)
-
-    def query_details(self, place_id):
-        try:
-            response = requests.get(API_URL_DET.format(place_id, API_KEY_DET)).json()
-            self.lat = response["geometry"]["location"]["lat"]
-            self.long = response["geometry"]["location"]["long"]
-            self.opening_hours = response["opening_hours"]
-        except Exception as e:
-            print("query_details() error: {}".format(e))
 
 
 def get_location(ip_address):
